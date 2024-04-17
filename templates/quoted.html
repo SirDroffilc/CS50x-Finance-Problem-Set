@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <h1>Request for a Stock Quote</h1>
+    <br />
+    <h2>{{ quote["symbol"] }}</h2>
+    <p>{{ usd_func(quote["price"]) }}</p>
+{% endblock %}
