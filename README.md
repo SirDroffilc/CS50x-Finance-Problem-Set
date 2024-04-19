@@ -32,7 +32,7 @@ Then, session['user_id'] is set to the database id of the account to remember th
 
 #### Log In 
 @app.route("/login") | First, the session is cleared.
-If requested via GET, it returns 'login.html', which has a form that colelcts username and password, submitted with action '/login' and method 'post'.
+If requested via GET, it returns 'login.html', which has a form that collects username and password, submitted with action '/login' and method 'post'.
 If requested via POST, it checks if the details are in the database 'users' table. If it is, then the session remembers the user's id and redirected to the homepage (stock portfolio)
 Additionally, this is the default page of the web app if there is no currently logged in user. This is defined in the login_required() function in helpers.py.
 
